@@ -7,7 +7,7 @@ from models.user import User
 user_dict = {}
 router = APIRouter()
 
-@router.post("/user", status_code=status.HTTP_201_CREATED)
+@router.post("/user/register", status_code=status.HTTP_201_CREATED)
 def register_user(user: User):
     if user.name is None:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Name is required")
