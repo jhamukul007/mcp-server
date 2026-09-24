@@ -1,0 +1,79 @@
+# ==============================================================================
+# 1. PYTHON BYTECODE & CACHES
+# ==============================================================================
+# Prevents compiled Python files and runtime caches from being tracked.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================================================================
+# 2. VIRTUAL ENVIRONMENTS
+# ==============================================================================
+# Excludes the isolated environments where your dependencies are installed.
+.venv/
+venv/
+ENV/
+env/
+pythonenv/
+
+# ==============================================================================
+# 3. DISTRIBUTION & PACKAGING
+# ==============================================================================
+# Ignores build artifacts created when packaging your Python code.
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# 4. TESTING & COVERAGE
+# ==============================================================================
+# Keeps test runners, automation tools, and coverage reports out of git.
+.htmlcov/
+.tox/
+.nosenv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+coverage.xml
+.coverage
+.coverage.*
+nosetests.xml
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================================================================
+# 5. ENVIRONMENT VARIABLES (SECURITY)
+# ==============================================================================
+# NEVER commit secrets, API keys, or local configuration databases.
+.env
+.venv
+pip-env.txt
+*.db
+*.sqlite3
+
+# ==============================================================================
+# 6. IDEs & EDITORS (Optional but Recommended)
+# ==============================================================================
+# Editor-specific settings that shouldn't be shared with teammates.
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
